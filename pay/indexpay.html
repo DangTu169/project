@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="stylepay.css">
+    <title>Pay</title>
+</head>
+<body>
+    <div class="logo">
+        <img src="imgpay/logo.cc5d661a.svg" alt="">
+    </div>
+    <div class="container">
+        <div class="pay">
+            <div class="order col50">
+                <div class="order-header">
+                    <h2>ĐƠN HÀNG</h2>
+                    <div class="fix">
+                        <span class="fix1 fix-content">Sửa</span>
+                        <span class="cancel fix-content">Hủy</span>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product-info">
+                        <div class="close"><i class="fa-solid fa-xmark"></i></div>
+                        <div class="product-img">
+                            <img src="imgpay/nam1.webp" alt="">
+                        </div>
+                        <div class="product-name">
+                            <h3>GALLANT</h3>
+                            <h4>40MM</h4>
+                            <span style="font-size: 14px;">SL : 01</span>
+                        </div>
+                    </div>
+                    <div class="product-price">
+                        <span>2.229.000 ₫</span>
+                    </div>
+                </div>
+                <div class="sale">
+                    <input type="text" placeholder="Nhập mã khuyến mại...">
+                    <button>ÁP DỤNG</button>
+                </div>
+                <div class="calculate">
+                    <div class="calculate-item">
+                        <span>Thành tiền</span>
+                        <h4>2.229.000 ₫</h4>
+                    </div>
+                    <div class="calculate-item">
+                        <span>Mã giảm giá</span>
+                        <h4 style="color: red;">0 ₫</h4>
+                    </div>
+                    <div class="calculate-item">
+                        <span>Phí ship</span>
+                        <h4>0 ₫</h4>
+                    </div>
+                </div>
+                <div class="total">
+                    <div class="total-item">
+                        <span>TỔNG</span>
+                        <h3>2.299.000 ₫</h3>
+                    </div>
+                    <div class="total-item" style="color: #87888a;">
+                        <span>(Đã bao gồm VAT)</span>
+                        <span>hoặc 766,666 ₫ x 3 kỳ với <a href="#"> Fundiin</a></span>
+                    </div>
+                </div>
+            </div>
+            <div class="info col50">
+                <h2>THÔNG TIN KHÁCH HÀNG</h2>
+                <form action="" id="info-customer">
+                    <input type="text" placeholder="Email" id="email" class="inputContact">
+                    <p id="errEmail" class="err"></p>
+                    <input type="text" placeholder="Họ và tên" id="name" class="inputContact">
+                    <p id="errName" class="err"></p>
+                    <input type="text" placeholder="Số điện thoại" id="phone" class="inputContact">
+                    <p id="errPhone" class="err"></p>
+                    <input type="text" placeholder="Địa chỉ" id="address" class="inputContact">
+                    <p id="erraddress" class="err"></p>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Nhập ghi chú nếu cần"></textarea>
+                </form>
+                <button class="btn-next">TIẾP TỤC <i class="fa-solid fa-arrow-right"></i></button>
+                <div class="payment">
+                    <h2>CHỌN PHƯƠNG THỨC THANH TOÁN</h2>
+                    <div class="pay-item">
+                        <div class="col40">
+                            <p>Trả tiền khi nhận hàng</p>
+                            <img src="imgpay/tt1.png" alt="">
+                        </div>
+                        <div class="col40">
+                            <p>Trả qua MOMO</p>
+                            <img src="imgpay/tt3.png" alt="">
+                        </div>
+                        <div class="col40">
+                            <p>Trả qua VNPAY</p>
+                            <img src="imgpay/tt4.png" alt="">
+                        </div>
+                        <div class="col40">
+                            <p>Chuyển khoản</p>
+                            <img src="imgpay/tt5.png" alt="">
+                        </div>
+                        <div class="col40">
+                            <p>Trả qua ShoppePay</p>
+                            <img src="imgpay/tt6.jpg" alt="">
+                        </div>
+                        <div class="col40">
+                            <p>
+                                <span>Fundiin</span><br>
+                                Trả sau 3 kỳ miễn lãi
+                            </p>
+                            <img src="imgpay/tt2.png" alt="">
+                        </div>
+                    </div>
+                    <button class="btn-ok">ĐẶT HÀNG NGAY <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clear">
+        <img src="imgpay/logo.cc5d661a.svg" alt="">
+        <p>Giỏ hàng của bạn đang trống</p>
+        <button class="shopping"><a href="../home/index.html">TIẾP TỤC MUA SẮM <i class="fa-solid fa-arrow-right"></i></a></button>
+    </div>
+    <div class="done">
+        <h3 style="margin-bottom: 20px;">Bạn đã đặt hàng thành công - Đơn hàng chi tiết sẽ được gửi qua Email</h3>
+        <button class="shopping"><a href="../home/index.html">TIẾP TỤC MUA SẮM <i class="fa-solid fa-arrow-right"></i></a></button>
+    </div>
+    <script src="scriptpay.js"></script>
+</body>
+</html>
